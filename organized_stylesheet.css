@@ -1,0 +1,207 @@
+/*The CSS Stylesheet, but organized alphabetically. 
+
+According to Meirt, 2018, sorting alphabetically is one of the most intuitive and universally understandable methods of organizing code.
+While people may have different ideas of what should be prioritized by hierarchy, and which elements should be grouped together,
+the order in which categories should go is indisputable, and makes for a navigable document*/
+
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+   body {
+       font-family:  'Open Sans', sans-serif;
+       font-size: 90%;
+       color: #666;
+       background-color: #016a86;}
+   .center-mid-1{
+       width: 940px;
+       background-color: #BEB594;
+       padding-bottom: 15px;
+       padding-top: 5px;
+       }
+   .center-mid-2{
+       width: 940px;
+       background-color: #efeae6;
+       padding-bottom: 15px;
+       padding-top: 5px;
+       }
+   .center-mid-3{
+       width: 940px;
+       background-color: #dee1e5;
+       padding-bottom: 15px;
+       padding-top: 5px;
+       }
+   .center-text {
+       text-align: center;
+   }
+   .center-2{
+       width: 940px;
+       margin: auto;
+       padding-bottom: 15px;
+       padding-top: 5px;
+       }
+   .center-2>h1, .center-2>p{
+       text-align: center;
+   }
+   .center-3{
+       width: 300px;
+       margin: 0 0;
+       }
+   fieldset {
+       width: 310px;
+       margin-top: 20px;
+       border: 1px solid #d6d6d6;
+       background-color: #fde9b2;
+       line-height: 1.6em;}
+   footer {
+       text-align: center;
+   }
+   h1.center-text
+   {
+       font-family: 'Berkshire Swash', serif;
+       font-size: 550%;
+   }
+   .img-1{
+       margin: auto;
+       width: 100%;
+   }
+   .img-2{
+       margin: auto;
+       width: 30%;
+       padding-left: 5px;
+   }
+   .img-3{
+       margin: auto;
+       width: 30%;
+   }
+   input[type="text"] {
+       width: 120px;
+       border: 1px solid #d6d6d6;
+       padding: 2px;
+       outline: none;}
+   input[type="text"]:focus,
+   input[type="text"]:hover {
+       background-color: #d0e2f0;
+       border: 1px solid #999999;}
+   input[type="submit"] {
+       border: 1px solid #006633;
+       background-color: #009966;
+       color: #ffffff;
+       border-radius: 5px;
+       padding: 5px;
+       margin-top: 10px;}
+   input[type="submit"]:hover {
+       border: 1px solid #006633;
+       background-color: #00CC33;
+       color: #ffffff;
+       cursor: pointer;}
+   legend {
+       font-style: italic;
+       color: #666666;}
+   li {
+       list-style-image: url("images/icon-plus.png");
+       line-height: 1.6em;}
+   .menu-holder {
+       float: right;
+       max-width: 80%;
+       position: fixed;
+       text-align: center;
+       height: 100%;
+       background-color: #ffffff;
+       right: -100%;
+       top: 0;
+       transition: right .3s ease;
+       width: 100%;
+       overflow: auto;
+       max-width: 100%;
+       z-index: 99;
+       }  
+   #page {
+       max-width: 940px;
+       min-width: 720px;
+       margin: 10px auto 10px auto;
+      
+       border: 4px  #000;
+       background-color: #f6f4e8;
+       vertical-align: baseline;
+   }
+   .smlogo{
+       height: 21.3px;
+       width:15px;
+       padding:5px;
+   }
+   .submit {
+       width: 310px;
+       text-align: right;}
+   table {
+       border-spacing: 0px;}
+   td {
+       text-shadow: 1px 1px 1px #ffffff;}
+   th, td {
+       padding: 5px 30px 5px 10px;
+       border-spacing: 0px;
+       font-size: 90%;
+       margin: 0px;}
+   th, td {
+       text-align: left;
+       background-color: #f0eee0;
+       border-top: 1px solid #f1f8fe;
+       border-bottom: 1px solid #cbd2d8;
+       border-right: 1px solid #cbd2d8;}
+   .title {
+       float: left;
+       width: 160px;
+       clear: left;}
+   tr.even td, tr.even th {
+       background-color: #f5f3e8;}
+   tr.head th {
+       color: #fff;
+       background-color: #d6b890;
+       border-bottom: 2px solid #a09854;
+       border-right: 1px solid #beb774;
+       border-top: 1px solid #d6cb90;
+       text-align: center;
+       text-shadow: -1px -1px 1px #666666;
+       letter-spacing: 0.15em;}
+   tr.head th:first-child {
+       /* WebKit is a browser engine used in Apple's Safari browser, Amazon
+         Kindle e-book reader, BlackBerry Browser in OS 6 and above.
+ 
+         Not all CSS3 properties work well in all browsers. In a way to ensure that web pages display as expected in their browsers, vendors like Mozilla and Webkit developed their own browser-compatible properties. With CSS3, many compatibility issues are now resolved.
+         However, it is not unusual to still see these properties used in stylesheets. */
+ 
+       /* Webkit property*/
+       -webkit-border-top-left-radius: 5px;
+ 
+       /* Mozilla property*/
+       -moz-border-radius-topleft: 5px;
+ 
+       /* CSS3 property*/
+       border-top-left-radius: 5px;
+ 
+       /* More on border-radius property: https://www.the-art-of-web.com/css/border-radius/ */
+   }
+   tr.head th:last-child {
+       -webkit-border-top-right-radius: 5px;
+       -moz-border-radius-topright: 5px;
+       border-top-right-radius: 5px;}
+   ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       }
+   ul li {
+       display: inline;
+       padding: 10px;
+       float: right;
+   }
+   ul li a, ul a :hover,
+   ul li a:focus, ul li a:active {
+       border: none;
+       text-decoration: none;
+       color: inherit;
+   }
+   video{
+       width: 940px;
+   }
+   
+ 
+
